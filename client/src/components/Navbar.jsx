@@ -22,7 +22,7 @@ const Navbar = () => {
             </div>
             } */}
 
-            Check
+            
             
         </div>
     </div>
