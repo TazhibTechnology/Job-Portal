@@ -10,6 +10,7 @@ const App = () => {
         <Route path="/" element={<Home/>}/>
         {/* Apply Job by id */}
         <Route path="/apply-job/:id" element={<ApplyJob/>}/>
+        {/* Application Page */}
         <Route path="/applications" element={<Applications/>}/>
         
       </Routes>
