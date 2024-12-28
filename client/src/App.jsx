@@ -6,6 +6,7 @@ const App = () => {
   return (
     <div>
       <Routes>
+        {/* Home page */}
         <Route path="/" element={<Home/>}/>
         <Route path="/apply-job/:id" element={<ApplyJob/>}/>
         <Route path="/applications" element={<Applications/>}/>
