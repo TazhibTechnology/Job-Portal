@@ -43,33 +43,39 @@ const JobListing = () => {
               </div>
             </>
           )}
-          {/* Category Filter */}
-          <div className="max-lg:hidden">
-            <h4 className="font-medium text-lg py-4"> Search by Category</h4>
-            <ul className="space-y-4 text-gray-600">
-              {
-                JobCategories.map((category, index)=>(
-                  <li className="flex gap-3 items-center" key={index}>
-                    <input className="scale-125" type="checkbox" />{category}
-                  </li>
-                ))
-              }
-            </ul>
-          </div>
-           {/* Location Filter */}
-           <div className="max-lg:hidden">
-            <h4 className="font-medium text-lg py-4"> Search by Location</h4>
-            <ul className="space-y-4 text-gray-600">
-              {
-                JobLocations.map((location, index)=>(
-                  <li className="flex gap-3 items-center" key={index}>
-                    <input className="scale-125" type="checkbox" />{location}
-                  </li>
-                ))
-              }
-            </ul>
-          </div>
+        {/* Category Filter */}
+        <div className='max-lg:hidden'>
+          <h4 className='font-medium text-lg py-4 '> Search by Category</h4>
+          <ul className='space-y-4 text-gray-600'>
+            {JobCategories.map((category, index) => (
+              <li className='flex gap-3 items-center' key={index}>
+                <input className='scale-125' type='checkbox' />
+                {category}
+              </li>
+            ))}
+          </ul>
+        </div>
+        {/* Location Filter */}
+        <div className=' max-lg:hidden'>
+          <h4 className='font-medium text-lg py-4 pt-14'> Search by Location</h4>
+          <ul className='space-y-4 text-gray-600'>
+            {JobLocations.map((location, index) => (
+              <li className='flex gap-3 items-center' key={index}>
+                <input className='scale-125' type='checkbox' />
+                {location}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
+      {/* Job Listing */}
+      <section className="w-full lg:w-3/4 text-gray-800 max-lg:px-4">
+        <h3 className="font-medium text-3xl py-2" id="job-list">Latest jobs</h3>
+        <p className="mb-8">Get your desired job from top companies</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+
+        </div>
+      </section>
     </div>
   );
 };
