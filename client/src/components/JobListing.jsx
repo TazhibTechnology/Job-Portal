@@ -54,7 +54,7 @@ const JobListing = () => {
           {showFilter ? "Close" : "Filters"}
         </button>
         {/* Category Filter */}
-        <div className={searchFilter ? "" : "max-lg:hidden"}>
+        <div  className={showFilter ? "" : "max-lg:hidden"}>
           <h4 className='font-medium text-lg py-4 '> Search by Category</h4>
           <ul className='space-y-4 text-gray-600'>
             {JobCategories.map((category, index) => (
@@ -66,9 +66,8 @@ const JobListing = () => {
           </ul>
         </div>
         {/* Location Filter */}
-        <div className={searchFilter ? "" : "max-lg:hidden"}>
+        <div  className={showFilter ? "" : "max-lg:hidden"}>
           <h4 className='font-medium text-lg py-4 pt-14'>
-            {" "}
             Search by Location
           </h4>
           <ul className='space-y-4 text-gray-600'>
