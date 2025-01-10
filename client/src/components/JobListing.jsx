@@ -13,7 +13,7 @@ const JobListing = () => {
       {/* Sidebar */}
       <div className='w-full lg:w-1/4 bg-white px-4 '>
         {/* Search Filter from Hero  */}
-        {isSearched &&
+        {/* {isSearched && */}
           (searchFilter.title !== "" || searchFilter.location !== "") && (
             <>
               <h3 className='font-medium text-lg mb-4 '>Current Search</h3>
