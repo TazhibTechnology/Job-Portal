@@ -2,6 +2,8 @@ import { useState, useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import { jobsData } from "../assets/assets";
+import Loading from "../components/Loading";
+import {Navbar} from '../components/Navbar' 
 const ApplyJob = () => {
   const { id } = useParams();
   const [JobsData, setJobData] = useState(null);
@@ -22,11 +24,11 @@ const ApplyJob = () => {
     }
   }, [id, jobs]);
   return JobData ? (
-    <div></div>
+    <>
+    <Navbar/>
+    </>
   ) : (
-    <div className='min-h-screen flex items-center justify-center'>
-      <div className="w-20 h-20 border-4 border-gray-300 border-t-blue-400 rounded-full animate-spin"></div>
-    </div>
+    <Loading/>
   );
 };
 
